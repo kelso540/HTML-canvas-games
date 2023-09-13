@@ -1,0 +1,31 @@
+:root{
+  --red: #ec4141; 
+  --orange: #ed7f37; 
+  --yellow: #ffe850; 
+  --pink: #e37a76; 
+  --green: #0a913e;
+  --light-green: #35a55f;
+  --dark-green: #084f32;
+  --blue: #b0cbe9;
+  --light-blue: #0099ff;
+  --gray: #9d9d97;
+  --dark-gray: #5d5d5d;
+  --brown: #bc7748; 
+  --dark-brown: #48373b; 
+  --white: #eeeeee;
+  --black: #000000;
+}
+
+#root {
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* font-family: 'Audiowide', cursive;
+font-family: 'Exo 2', sans-serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Press Start 2P', cursive; */

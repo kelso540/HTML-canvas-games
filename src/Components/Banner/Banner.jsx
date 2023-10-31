@@ -35,7 +35,7 @@ function Banner({ scroll }) {
         <span className='h1'><i>HTML</i> {canvasText} <strong>Games</strong></span>
         <div className='rocket' style={{
           left: `${ scroll * 2 > 150 ? 738 : -100 + scroll * 2 }%`,
-          bottom: `${ scroll * 2 > 150 ? -81 : 80 - scroll * 2.2  }px`,
+          bottom: `${ scroll * 2 > 150 ? -81 : 170 - scroll * 2.2  }px`,
           scale: `${ scroll * 2 > 150 ? 0 : 1.5 - scroll * 0.018 }`,
           opacity: `${ 0 + scroll }`,
         }}>
@@ -43,11 +43,14 @@ function Banner({ scroll }) {
       </div>
       <div className='solarSystem' style={{
         transform: `rotate(-${ scroll * 2 > 121 ? 12 : scroll * 0.2 }deg)`,
+        opacity: `${ scroll * 2 < 50 ? 0 : scroll * 0.2 }`, 
+        transition: 'all 5s',
       }}>
         <div className='sun' style={{
            "--deg": `${ scroll * 2 }deg`,
            left: `${ scroll * 2 > 121 ? 56 : 50 + scroll * 0.1 }%`,
            top: `${ scroll * 2 > 121 ? 30 : 25 + scroll * 0.08 }%`,
+           transition: 'all 4s',
         }}></div>
       </div>
     </div>

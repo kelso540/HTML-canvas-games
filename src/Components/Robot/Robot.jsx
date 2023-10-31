@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react'
 import './Robot.css'
 
-function Robot() {
+function Robot({ scroll }) {
 
     const eyeBallHeight = 70;
 
@@ -53,6 +54,15 @@ function Robot() {
     
         return () => window.removeEventListener('mousemove', getMouseXY);
       }, []);
+
+      useEffect(()=>{
+        const handleScroll = () => {
+          setMouseX(scroll * 0.02);
+          setMouseY(scroll * 0.02);
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      })
   return (
     <div className='robotIcon'>
     <div className='hat'>

@@ -41,6 +41,7 @@
     transform: rotate(var(--deg));
     animation: rotate 1s infinite linear;
     animation-play-state: paused;
+    z-index: 0;
 }
 .gameCard::after{
     content: "";
@@ -56,6 +57,7 @@
     transform: translate(-50%, -50%);
     border-radius: 20px;
     transition: all 0.5s;
+    z-index: 3;
 }
 .gameCard:hover::after{
     content: "";
@@ -68,6 +70,7 @@
     background-image: url(/assets/space-game.png);
     background-position: center;
     background-size: cover;
+    z-index: 1;
 }
 .spaceGame:hover::after{
     content: "SPACE GAME";
@@ -82,6 +85,7 @@
     background-image: url(/assets/bee-game.png);
     background-position: center;
     background-size: cover;
+    z-index: 1;
 }
 .beeGame:hover::after{
     content: "HONEY POT";
@@ -96,6 +100,7 @@
     background-image: url(/assets/breakout.png);
     background-position: center;
     background-size: cover;
+    z-index: 1;
 }
 .breakout:hover::after{
     content: "BREAKOUT";
@@ -110,6 +115,7 @@
     background-image: url(/assets/robot-run.png);
     background-position: center;
     background-size: cover;
+    z-index: 1;
 }
 .robotRun:hover::after{
     content: "ROBOT RUN";
@@ -124,6 +130,7 @@
     background-image: url(/assets/snake.png);
     background-position: center;
     background-size: cover;
+    z-index: 1;
 }
 .snake:hover::after{
     content: "SNAKE";
@@ -152,7 +159,7 @@
 }
 @media screen and (max-width: 600px) {
     .HTMLGamesDiv{
-        margin-top: 300px;
+        margin-top: 360px;
     }
     .HTMLGamesDiv h3{
         font-size: 25px;

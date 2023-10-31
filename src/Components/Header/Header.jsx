@@ -9,7 +9,7 @@ function Header({ scroll }) {
         borderBottom: `solid 4px rgb(${ (scroll + 20) * 20 }, ${ (scroll + 20) * 10 }, ${ (scroll + 10) * 10 })`,
       }}>
         <h1>WELC</h1>
-        <Robot />
+        <Robot scroll={scroll} />
         <h2>ME</h2>
       </div>
   )
